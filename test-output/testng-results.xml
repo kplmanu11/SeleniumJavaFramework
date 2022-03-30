@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-30T21:18:40 NPT" name="Default suite" finished-at="2022-03-30T21:19:36 NPT" duration-ms="56254">
+    <groups>
+    </groups>
+    <test started-at="2022-03-30T21:18:40 NPT" name="Default test" finished-at="2022-03-30T21:19:36 NPT" duration-ms="56254">
+      <class name="Framework.SeleniumJava.homePage">
+        <test-method signature="invokingDriver(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Framework.SeleniumJava.homePage@1e04fa0a]" started-at="2022-03-30T21:18:40 NPT" name="invokingDriver" data-provider="getData" finished-at="2022-03-30T21:19:06 NPT" duration-ms="26292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restricted User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokingDriver -->
+        <test-method signature="invokingDriver(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Framework.SeleniumJava.homePage@1e04fa0a]" started-at="2022-03-30T21:19:06 NPT" name="invokingDriver" data-provider="getData" finished-at="2022-03-30T21:19:36 NPT" duration-ms="29929" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xyz@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non-Restricted User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokingDriver -->
+      </class> <!-- Framework.SeleniumJava.homePage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
