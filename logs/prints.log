@@ -1,0 +1,3 @@
+18:19:39.776 [main] INFO  resources.base - Driver is initialized
+18:20:02.847 [main] INFO  resources.base - navigated to the home page
+18:20:08.469 [main] INFO  resources.base - driver is closed and the browser process is killed

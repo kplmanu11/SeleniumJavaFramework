@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -15,7 +16,8 @@ import pageObjects.loginPage;
 import resources.base;
 
 public class homePage extends base {
-	
+	//for parallel execution its better to create the driver within the scope of the this class
+	public WebDriver driver;
 	//To implement log below logger class should be defined 
 	public static Logger log = LogManager.getLogger(base.class.getName());
 
