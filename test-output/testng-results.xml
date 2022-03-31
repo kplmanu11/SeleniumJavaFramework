@@ -2,46 +2,65 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-31T20:31:14 NPT" name="Suite" finished-at="2022-03-31T20:31:41 NPT" duration-ms="26777">
+  <suite started-at="2022-03-31T22:23:45 NPT" name="Default suite" finished-at="2022-03-31T22:24:15 NPT" duration-ms="30590">
     <groups>
     </groups>
-    <test started-at="2022-03-31T20:31:14 NPT" name="HomePage" finished-at="2022-03-31T20:31:41 NPT" duration-ms="26777">
-      <class name="Framework.SeleniumJava.homePage">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Framework.SeleniumJava.homePage@1c9f0a20]" started-at="2022-03-31T20:31:14 NPT" name="initialize" finished-at="2022-03-31T20:31:19 NPT" duration-ms="4683" status="PASS">
+    <test started-at="2022-03-31T22:23:45 NPT" name="Default test" finished-at="2022-03-31T22:24:15 NPT" duration-ms="30590">
+      <class name="Framework.SeleniumJava.DifferentObjectCreation">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Framework.SeleniumJava.DifferentObjectCreation@19fe4644]" started-at="2022-03-31T22:23:45 NPT" name="initialize" finished-at="2022-03-31T22:23:49 NPT" duration-ms="4618" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="invokingDriver(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Framework.SeleniumJava.homePage@1c9f0a20]" started-at="2022-03-31T20:31:19 NPT" name="invokingDriver" data-provider="getData" finished-at="2022-03-31T20:31:41 NPT" duration-ms="21552" status="FAIL">
+        <test-method signature="invokinDriverDifferent(java.lang.String,java.lang.String)[pri:0, instance:Framework.SeleniumJava.DifferentObjectCreation@19fe4644]" started-at="2022-03-31T22:23:49 NPT" name="invokinDriverDifferent" data-provider="getData" finished-at="2022-03-31T22:24:15 NPT" duration-ms="25808" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[abc@gmail.com]]>
+                <![CDATA[ram@gmai.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Restricted User]]>
+                <![CDATA[test]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[expected [FEATURED CghjgOURSES] but found [FEATURED COURSES]]]>
+              <![CDATA[element click intercepted: Element <a href="https://rahulshettyacademy.com/sign_in/">...</a> is not clickable at point (1238, 16). Other element would receive the click: <div class="listbuilder-popup-content">...</div>
+  (Session info: MicrosoftEdge=99.0.1150.55)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-7U3NRAG', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [901c939ac120a8c8935c0b4724c54fd6, clickElement {id=a92d8df3-afe7-4a50-ae88-f3405851e8b3}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 99.0.1150.55, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:50486}, msedge: {msedgedriverVersion: 99.0.1150.36 (c438621746b29..., userDataDir: C:\Users\KAPIL~1.NEU\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50486/devtoo..., se:cdpVersion: 99.0.1150.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (901c939ac120a8c8935c0b4724c54fd6)] -> css selector: a[href*='sign_in']]
+Session ID: 901c939ac120a8c8935c0b4724c54fd6]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [FEATURED CghjgOURSES] but found [FEATURED COURSES]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at Framework.SeleniumJava.homePage.invokingDriver(homePage.java:38)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="https://rahulshettyacademy.com/sign_in/">...</a> is not clickable at point (1238, 16). Other element would receive the click: <div class="listbuilder-popup-content">...</div>
+  (Session info: MicrosoftEdge=99.0.1150.55)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-7U3NRAG', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [901c939ac120a8c8935c0b4724c54fd6, clickElement {id=a92d8df3-afe7-4a50-ae88-f3405851e8b3}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 99.0.1150.55, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:50486}, msedge: {msedgedriverVersion: 99.0.1150.36 (c438621746b29..., userDataDir: C:\Users\KAPIL~1.NEU\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50486/devtoo..., se:cdpVersion: 99.0.1150.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (901c939ac120a8c8935c0b4724c54fd6)] -> css selector: a[href*='sign_in']]
+Session ID: 901c939ac120a8c8935c0b4724c54fd6
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at pageObjects.landingPageObject.loginClick(landingPageObject.java:22)
+at Framework.SeleniumJava.DifferentObjectCreation.invokinDriverDifferent(DifferentObjectCreation.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -72,15 +91,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invokingDriver -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:Framework.SeleniumJava.homePage@1c9f0a20]" started-at="2022-03-31T20:31:41 NPT" name="TearDown" finished-at="2022-03-31T20:31:41 NPT" duration-ms="139" status="PASS">
+        </test-method> <!-- invokinDriverDifferent -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Framework.SeleniumJava.DifferentObjectCreation@19fe4644]" started-at="2022-03-31T22:24:15 NPT" name="TearDown" finished-at="2022-03-31T22:24:15 NPT" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- Framework.SeleniumJava.homePage -->
-    </test> <!-- HomePage -->
-  </suite> <!-- Suite -->
+      </class> <!-- Framework.SeleniumJava.DifferentObjectCreation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
