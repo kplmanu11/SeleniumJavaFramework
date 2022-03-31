@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.944 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 50.276 s <<< FAILURE! - in TestSuite
+invokingDriver(Framework.SeleniumJava.homePage)  Time elapsed: 43.246 s  <<< FAILURE!
+java.lang.AssertionError: expected [FEATURED CghjgOURSES] but found [FEATURED COURSES]
+	at Framework.SeleniumJava.homePage.invokingDriver(homePage.java:38)
+

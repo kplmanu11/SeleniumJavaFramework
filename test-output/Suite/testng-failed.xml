@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="Framework.SeleniumJava.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="HomePage(failed)">
     <classes>
-      <class name="Framework.SeleniumJava.usingDataProvider">
+      <class name="Framework.SeleniumJava.homePage">
         <methods>
+          <include name="invokingDriver" invocation-numbers="0"/>
           <include name="initialize"/>
-          <include name="test" invocation-numbers="0"/>
           <include name="TearDown"/>
         </methods>
-      </class> <!-- Framework.SeleniumJava.usingDataProvider -->
+      </class> <!-- Framework.SeleniumJava.homePage -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- HomePage(failed) -->
 </suite> <!-- Failed suite [Suite] -->
