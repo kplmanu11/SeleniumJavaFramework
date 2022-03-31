@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Framework.SeleniumJava.homePage">
+      <class name="Framework.SeleniumJava.DifferentObjectCreation">
         <methods>
-          <include name="invokingDriver" invocation-numbers="1"/>
-          <include name="initialize"/>
           <include name="TearDown"/>
+          <include name="initialize"/>
+          <include name="invokinDriverDifferent" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Framework.SeleniumJava.homePage -->
+      </class> <!-- Framework.SeleniumJava.DifferentObjectCreation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
