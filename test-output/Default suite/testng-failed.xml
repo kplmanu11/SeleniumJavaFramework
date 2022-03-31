@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Framework.SeleniumJava.usingDataProvider">
+      <class name="Framework.SeleniumJava.homePage">
         <methods>
+          <include name="invokingDriver" invocation-numbers="1"/>
           <include name="initialize"/>
-          <include name="test" invocation-numbers="0"/>
           <include name="TearDown"/>
         </methods>
-      </class> <!-- Framework.SeleniumJava.usingDataProvider -->
+      </class> <!-- Framework.SeleniumJava.homePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,8 @@ package Framework.SeleniumJava;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -14,35 +16,40 @@ import resources.base;
 
 public class homePage extends base {
 	
+	//To implement log below logger class should be defined 
+	public static Logger log = LogManager.getLogger(base.class.getName());
+
 	@BeforeTest
 	public void initialize() throws IOException {
 		driver = initializeDriver();
-		driver.get(prop.getProperty("url"));
+		log.info("Driver is initialized");
+		
 	}
 
 	@Test(dataProvider = "getData")
 	public void invokingDriver(String username, String password, String text) throws IOException, InterruptedException {
-		
-
+		driver.get(prop.getProperty("url"));
+		log.info("navigated to the home page");
 		landingPage lpg = new landingPage(driver);
 		Thread.sleep(3000);
 		Assert.assertEquals(lpg.titleText().getText(), "FEATURED COURSES");
 		Assert.assertTrue(lpg.navBarAll().isDisplayed());
-		//System.out.println(lpg.navBarAll().isDisplayed());
+		// System.out.println(lpg.navBarAll().isDisplayed());
 		lpg.noThankYouText().click();
 		lpg.loginClick().click();
 
 		loginPage lp = new loginPage(driver);
 		lp.EmailAddress().sendKeys(username);
 		lp.Password().sendKeys(password);
-		//System.out.print(text);
+		// System.out.print(text);
 		lp.LoginButton().click();
 
 	}
-	
+
 	@AfterTest
 	public void TearDown() {
 		driver.close();
+		log.info("driver is closed and the browser process is killed");
 	}
 
 	@DataProvider
