@@ -131,10 +131,14 @@
                   </a> <!-- invokingDriver(abc@gmail.com, password, Restricted User) -->
                   <span class="method-name">invokingDriver</span>
                   <span class="parameters">(abc@gmail.com, password, Restricted User)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [FEATURED CghjgOURSES] but found [FEATURED COURSES]
+                  <div class="stack-trace">java.lang.AssertionError: expected [FEATURED COUfdsfRSES] but found [FEATURED COURSES]
 	at Framework.SeleniumJava.homePage.invokingDriver(homePage.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 33 stack frames
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 24 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -149,11 +153,11 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;Framework.SeleniumJava.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;HomePage&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;HomePage&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Framework.SeleniumJava.homePage&quot;/&gt;
     &lt;/classes&gt;
@@ -199,12 +203,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'invokingDriver')
 data.setCell(0, 2, 'Framework.SeleniumJava.homePage')
-data.setCell(0, 3, 21552);
+data.setCell(0, 3, 27356);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -239,11 +243,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">invokingDriver(abc@gmail.com, password, Restricted User)</span>
-                <span class="method-start">4699 ms</span>
+                <span class="method-start">4786 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">26634 ms</span>
+                <span class="method-start">32794 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

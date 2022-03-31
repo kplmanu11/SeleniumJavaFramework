@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 31 20:31:14 NPT 2022</td>
+<td>Started on:</td><td>Thu Mar 31 21:43:52 NPT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26777 ms)</td>
+<tr><td>Total time:</td><td>32 seconds (32968 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,11 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Framework.SeleniumJava.homePage.invokingDriver()'><b>invokingDriver</b><br>Test class: Framework.SeleniumJava.homePage<br>Parameters: abc@gmail.com, password, Restricted User</td>
-<td><div><pre>java.lang.AssertionError: expected [FEATURED CghjgOURSES] but found [FEATURED COURSES]
+<td><div><pre>java.lang.AssertionError: expected [FEATURED COUfdsfRSES] but found [FEATURED COURSES]
 	at Framework.SeleniumJava.homePage.invokingDriver(homePage.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1433976386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1433976386'><pre>java.lang.AssertionError: expected [FEATURED CghjgOURSES] but found [FEATURED COURSES]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace927160362", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace927160362'><pre>java.lang.AssertionError: expected [FEATURED COUfdsfRSES] but found [FEATURED COURSES]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -104,21 +108,16 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:808)
 	at org.testng.TestRunner.run(TestRunner.java:603)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
 </pre></div></td>
-<td>21</td>
-<td>Framework.SeleniumJava.homePage@1c9f0a20</td></tr>
+<td>27</td>
+<td>Framework.SeleniumJava.homePage@f325091</td></tr>
 </table><p>
 </body>
 </html>

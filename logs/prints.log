@@ -1,4 +1,5 @@
-20:33:14.951 [main] INFO  resources.base - Driver is initialized
-20:33:54.801 [main] INFO  resources.base - navigated to the home page
-20:33:57.811 [main] INFO  resources.base - popup cancelled
-20:33:58.345 [main] INFO  resources.base - driver is closed and the browser process is killed
+21:43:57.215 [TestNG-tests-1] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x6f84a059f46767a8
+21:43:57.375 [TestNG-tests-1] INFO  resources.base - Driver is initialized
+21:44:21.708 [TestNG-tests-1] INFO  resources.base - navigated to the home page
+21:44:24.721 [TestNG-tests-1] INFO  resources.base - popup cancelled
+21:44:25.538 [TestNG-tests-1] INFO  resources.base - driver is closed and the browser process is killed
