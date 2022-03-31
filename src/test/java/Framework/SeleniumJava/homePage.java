@@ -34,7 +34,8 @@ public class homePage extends base {
 		log.info("navigated to the home page");
 		landingPage lpg = new landingPage(driver);
 		Thread.sleep(3000);
-		Assert.assertEquals(lpg.titleText().getText(), "FEATURED COURSES");
+		log.info("popup cancelled");
+		Assert.assertEquals(lpg.titleText().getText(), "FEATURED CghjgOURSES");
 		Assert.assertTrue(lpg.navBarAll().isDisplayed());
 		// System.out.println(lpg.navBarAll().isDisplayed());
 		lpg.noThankYouText().click();

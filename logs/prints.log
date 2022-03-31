@@ -1,3 +1,4 @@
-18:19:39.776 [main] INFO  resources.base - Driver is initialized
-18:20:02.847 [main] INFO  resources.base - navigated to the home page
-18:20:08.469 [main] INFO  resources.base - driver is closed and the browser process is killed
+20:33:14.951 [main] INFO  resources.base - Driver is initialized
+20:33:54.801 [main] INFO  resources.base - navigated to the home page
+20:33:57.811 [main] INFO  resources.base - popup cancelled
+20:33:58.345 [main] INFO  resources.base - driver is closed and the browser process is killed
