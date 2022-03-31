@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 31 14:51:31 NPT 2022</td>
+<td>Started on:</td><td>Thu Mar 31 15:20:53 NPT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>45 seconds (45845 ms)</td>
+<tr><td>Total time:</td><td>66 seconds (66616 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Framework.SeleniumJava.usingDataProvider.test()'><b>test</b><br>Test class: Framework.SeleniumJava.usingDataProvider<br>Parameters: user@gmail.com, pass</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;https://rahulshettyacademy.com/sign_in/&quot;&gt;...&lt;/a&gt; is not clickable at point (994, 16). Other element would receive the click: &lt;div class=&quot;listbuilder-popup-content&quot;&gt;...&lt;/div&gt;
+<td title='Framework.SeleniumJava.homePage.invokingDriver()'><b>invokingDriver</b><br>Test class: Framework.SeleniumJava.homePage<br>Parameters: xyz@gmail.com, password, Non-Restricted User</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;NO&apos;)]&quot;}
   (Session info: MicrosoftEdge=99.0.1150.55)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;DESKTOP-7U3NRAG&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [3a4041df11ad70e643f8b3d8fa0f3597, clickElement {id=6664b45b-15ba-4ae9-b803-8767cc720198}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 99.0.1150.55, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59576}, msedge: {msedgedriverVersion: 99.0.1150.36 (c438621746b29..., userDataDir: C:\Users\KAPIL~1.NEU\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59576/devtoo..., se:cdpVersion: 99.0.1150.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (3a4041df11ad70e643f8b3d8fa0f3597)] -&gt; css selector: a[href*=&apos;sign_in&apos;]]
-Session ID: 3a4041df11ad70e643f8b3d8fa0f3597
+Command: [3092d8ee0774fc11d09983972049078e, findElement {using=xpath, value=//button[contains(text(),&apos;NO&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 99.0.1150.55, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:62337}, msedge: {msedgedriverVersion: 99.0.1150.36 (c438621746b29..., userDataDir: C:\Users\KAPIL~1.NEU\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62337/devtoo..., se:cdpVersion: 99.0.1150.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3092d8ee0774fc11d09983972049078e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -97,9 +97,12 @@ Session ID: 3a4041df11ad70e643f8b3d8fa0f3597
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at Framework.SeleniumJava.usingDataProvider.test(usingDataProvider.java:27)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at pageObjects.landingPage.noThankYouText(landingPage.java:30)
+	at Framework.SeleniumJava.homePage.invokingDriver(homePage.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,16 +131,16 @@ Session ID: 3a4041df11ad70e643f8b3d8fa0f3597
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1299661385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1299661385'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;https://rahulshettyacademy.com/sign_in/&quot;&gt;...&lt;/a&gt; is not clickable at point (994, 16). Other element would receive the click: &lt;div class=&quot;listbuilder-popup-content&quot;&gt;...&lt;/div&gt;
+</pre></div><a href='#' onClick='toggleBox("stack-trace198250778", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace198250778'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;NO&apos;)]&quot;}
   (Session info: MicrosoftEdge=99.0.1150.55)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;DESKTOP-7U3NRAG&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [3a4041df11ad70e643f8b3d8fa0f3597, clickElement {id=6664b45b-15ba-4ae9-b803-8767cc720198}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 99.0.1150.55, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59576}, msedge: {msedgedriverVersion: 99.0.1150.36 (c438621746b29..., userDataDir: C:\Users\KAPIL~1.NEU\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59576/devtoo..., se:cdpVersion: 99.0.1150.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (3a4041df11ad70e643f8b3d8fa0f3597)] -&gt; css selector: a[href*=&apos;sign_in&apos;]]
-Session ID: 3a4041df11ad70e643f8b3d8fa0f3597
+Command: [3092d8ee0774fc11d09983972049078e, findElement {using=xpath, value=//button[contains(text(),&apos;NO&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 99.0.1150.55, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:62337}, msedge: {msedgedriverVersion: 99.0.1150.36 (c438621746b29..., userDataDir: C:\Users\KAPIL~1.NEU\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62337/devtoo..., se:cdpVersion: 99.0.1150.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3092d8ee0774fc11d09983972049078e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -150,9 +153,12 @@ Session ID: 3a4041df11ad70e643f8b3d8fa0f3597
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at Framework.SeleniumJava.usingDataProvider.test(usingDataProvider.java:27)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at pageObjects.landingPage.noThankYouText(landingPage.java:30)
+	at Framework.SeleniumJava.homePage.invokingDriver(homePage.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -182,8 +188,21 @@ Session ID: 3a4041df11ad70e643f8b3d8fa0f3597
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>Framework.SeleniumJava.usingDataProvider@7bab3f1a</td></tr>
+<td>18</td>
+<td>Framework.SeleniumJava.homePage@7bab3f1a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Framework.SeleniumJava.homePage.invokingDriver()'><b>invokingDriver</b><br>Test class: Framework.SeleniumJava.homePage<br>Parameters: abc@gmail.com, password, Restricted User</td>
+<td></td>
+<td>43</td>
+<td>Framework.SeleniumJava.homePage@7bab3f1a</td></tr>
 </table><p>
 </body>
 </html>
