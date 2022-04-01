@@ -1,0 +1,63 @@
+Framework Requisites
+
+1) Creation of Maven Project
+2) Creating Base and utility functions
+3) Organizing Page Objects
+4) Adding Tests
+5) Datadriving/Parameterizing Tests
+6) COnverting into TestNG Framework
+7) Log4j API for logging inside framework
+8) TestNG Listeners
+9) Screenshot on TestFailures
+10) Creating excellent HTML reports for the Test Results
+11) Jenkins- Continuous Integration
+
+
+
+END to END Project Development from Scratch
+1) Create a Maven Project
+2) Create Page object files
+3) Implement Resuable Utilities and Centralize variables 
+4) Write TestCases
+5) Convert Project into TestNG
+6) Implement Data Driven And Parameterizing Practices
+7) Inject log4j logging
+8) build Excellent HTML reports
+9) Integrate with Jenkins-
+
+
+
+Jenkins installation and configuration
+1) download the jenkins
+2) download generic java package(.war) files
+3) command to install and up the jenkins server: from the directory hit the command: java -jar Jenkins.war -httpPort=8080
+4) goto jenkins and click manage jenkins
+5) click global tool configuration
+6) click jdk installation(copy the path of java jdk path and paste in the java_home) and click add jdk
+7) click maven instllation, similary copy the path of maven_home path from the env varibles and paste and click add maven
+8) use git if source code URL is set
+9) click save
+10 to create the new JOB
+11) click new item
+12) enter the job name
+13) select freestyle project
+14) provide the project code(either github or from the folder)
+15) From general tab, click advanced and select custom workspace
+16) copy the prject directory and copy it in .jenikins folder in C:Users
+17) After it is copied inthe jenkis home directory, then type ${JENKINS_HOME}/MavenJava in directory, where mavenjava is the folder which
+contaings pom.xml
+18) goto build environment mgmt
+19) select the maven version, which is set from the step 7.
+20) set the goals test -PRegression 
+
+TESTNG reports for the jenkins job
+1) install the plugins
+2) goto manage jenkins
+3) goto manage plugins
+4) search for the testng results plugin 
+5) click download and restart the jenkins
+6) confugure in the job
+7) click add post-build action
+8) select publish testng results
+
+
